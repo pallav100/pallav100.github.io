@@ -1,7 +1,9 @@
 ---
 ---
 
-@import "{{ body {
+@import "{{ site.theme }}";
+<style>
+body {
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -180,4 +182,4 @@ p.arrow:hover{
  #a7 {
   transition: -webkit-clip-path 0.58s 0.34s cubic-bezier(0.7, 0.3, 0, 1), background-color 0.58s 0.14s; }
 */
- }}";
+</style>
