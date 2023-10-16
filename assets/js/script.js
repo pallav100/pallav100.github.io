@@ -85,5 +85,20 @@ $(function() {
                 return false;
             }
     });
+//    $('.portfolio-item').on('click',function(event) {
+//     console.log(event.target.id)
+//         event.preventDefault();
+//         $(event.target.id).addClass("in modal-item");
+//     });
+    openModal = function(id) {
+        $(id).addClass("in modal-item");
+        $("body").css("overflow", "hidden");
+    }
+    closeModal = function(id){
+        // alert(id);
+        $(id).removeClass("in modal-item");
+        $("body").css("overflow", "scroll");
+    }
+   
     
 });
